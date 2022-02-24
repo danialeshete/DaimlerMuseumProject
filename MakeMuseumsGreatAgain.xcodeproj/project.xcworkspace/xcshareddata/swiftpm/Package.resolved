@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ProgressWebViewController",
+        "repositoryURL": "https://github.com/kf99916/ProgressWebViewController.git",
+        "state": {
+          "branch": null,
+          "revision": "58cdc10dac54232ef3096f5caece8d006e4122be",
+          "version": "2.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

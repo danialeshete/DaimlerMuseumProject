@@ -16,14 +16,25 @@
 		85027B132747E33E00E0D438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85027B112747E33E00E0D438 /* LaunchScreen.storyboard */; };
 		85027B1C2747E37000E0D438 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85027B1B2747E37000E0D438 /* ConnectionManager.swift */; };
 		85027B1F2747E44100E0D438 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85027B1E2747E44100E0D438 /* EventModel.swift */; };
+		85060230275183550094E520 /* ARRealityKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8506022F275183550094E520 /* ARRealityKitViewController.swift */; };
+		85060234275184A50094E520 /* Engine.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 85060233275184A50094E520 /* Engine.rcproject */; };
 		8523B09F274FBABC00971719 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8523B09E274FBABC00971719 /* AvatarViewController.swift */; };
 		8547CA2B274D6CF0006BC0C0 /* ClientCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8547CA2A274D6CF0006BC0C0 /* ClientCoordinator.swift */; };
+		855F71BC276A277200DBC230 /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855F71BB276A277200DBC230 /* GameCoordinator.swift */; };
+		855F71BF276A2A2200DBC230 /* QuestionGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855F71BE276A2A2200DBC230 /* QuestionGameViewController.swift */; };
+		855F71C1276A2E9C00DBC230 /* GameEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855F71C0276A2E9C00DBC230 /* GameEvent.swift */; };
+		855F71C3276A3F3C00DBC230 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855F71C2276A3F3C00DBC230 /* Constants.swift */; };
 		8583D78E2747EE2E000607CC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583D78D2747EE2E000607CC /* AppCoordinator.swift */; };
 		8583D7912747EF90000607CC /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583D7902747EF90000607CC /* HostViewController.swift */; };
 		8583D7932747EFB9000607CC /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583D7922747EFB9000607CC /* ClientViewController.swift */; };
 		8583D7952747F375000607CC /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583D7942747F375000607CC /* StoryboardInitializable.swift */; };
 		85919B34274E3CEF00192D8F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85919B33274E3CEF00192D8F /* GameViewController.swift */; };
 		85AB3C91274E9D890020357D /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AB3C90274E9D890020357D /* ARViewController.swift */; };
+		85BECFB6278F168300E4A6D8 /* Labels.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 85BECFB5278F168300E4A6D8 /* Labels.rcproject */; };
+		85BECFC02790810000E4A6D8 /* SwiftConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BECFB92790810000E4A6D8 /* SwiftConfettiView.swift */; };
+		85BECFC7279083C700E4A6D8 /* StarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BECFC6279083C700E4A6D8 /* StarsViewController.swift */; };
+		85CEFEAE275B90EE00A02800 /* ProgressWebViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 85CEFEAD275B90EE00A02800 /* ProgressWebViewController */; };
+		85CEFEB0275B931A00A02800 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CEFEAF275B931A00A02800 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,14 +49,24 @@
 		85027B142747E33E00E0D438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85027B1B2747E37000E0D438 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		85027B1E2747E44100E0D438 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		8506022F275183550094E520 /* ARRealityKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRealityKitViewController.swift; sourceTree = "<group>"; };
+		85060233275184A50094E520 /* Engine.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Engine.rcproject; sourceTree = "<group>"; };
 		8523B09E274FBABC00971719 /* AvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
 		8547CA2A274D6CF0006BC0C0 /* ClientCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCoordinator.swift; sourceTree = "<group>"; };
+		855F71BB276A277200DBC230 /* GameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
+		855F71BE276A2A2200DBC230 /* QuestionGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGameViewController.swift; sourceTree = "<group>"; };
+		855F71C0276A2E9C00DBC230 /* GameEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEvent.swift; sourceTree = "<group>"; };
+		855F71C2276A3F3C00DBC230 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8583D78D2747EE2E000607CC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		8583D7902747EF90000607CC /* HostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
 		8583D7922747EFB9000607CC /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		8583D7942747F375000607CC /* StoryboardInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
 		85919B33274E3CEF00192D8F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		85AB3C90274E9D890020357D /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		85BECFB5278F168300E4A6D8 /* Labels.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Labels.rcproject; sourceTree = "<group>"; };
+		85BECFB92790810000E4A6D8 /* SwiftConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftConfettiView.swift; sourceTree = "<group>"; };
+		85BECFC6279083C700E4A6D8 /* StarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsViewController.swift; sourceTree = "<group>"; };
+		85CEFEAF275B931A00A02800 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85CEFEAE275B90EE00A02800 /* ProgressWebViewController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +105,9 @@
 				8583D78F2747EF6C000607CC /* Views */,
 				85027B1D2747E43700E0D438 /* Model */,
 				85027B1A2747E35100E0D438 /* Network */,
+				85060232275184920094E520 /* Resource */,
 				85027B032747E33C00E0D438 /* AppDelegate.swift */,
 				85027B052747E33C00E0D438 /* SceneDelegate.swift */,
-				85027B092747E33C00E0D438 /* Main.storyboard */,
-				85027B0F2747E33E00E0D438 /* Assets.xcassets */,
-				85027B112747E33E00E0D438 /* LaunchScreen.storyboard */,
 				85027B142747E33E00E0D438 /* Info.plist */,
 				85027B0C2747E33C00E0D438 /* MakeMuseumsGreatAgain.xcdatamodeld */,
 			);
@@ -106,8 +126,21 @@
 			isa = PBXGroup;
 			children = (
 				85027B1E2747E44100E0D438 /* EventModel.swift */,
+				855F71C0276A2E9C00DBC230 /* GameEvent.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		85060232275184920094E520 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				85BECFB5278F168300E4A6D8 /* Labels.rcproject */,
+				85060233275184A50094E520 /* Engine.rcproject */,
+				85027B092747E33C00E0D438 /* Main.storyboard */,
+				85027B0F2747E33E00E0D438 /* Assets.xcassets */,
+				85027B112747E33E00E0D438 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		8547CA29274D6CDB006BC0C0 /* Coordinator */ = {
@@ -115,8 +148,19 @@
 			children = (
 				8583D78D2747EE2E000607CC /* AppCoordinator.swift */,
 				8547CA2A274D6CF0006BC0C0 /* ClientCoordinator.swift */,
+				855F71BB276A277200DBC230 /* GameCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		855F71BD276A2A0A00DBC230 /* GameViews */ = {
+			isa = PBXGroup;
+			children = (
+				855F71BE276A2A2200DBC230 /* QuestionGameViewController.swift */,
+				85919B33274E3CEF00192D8F /* GameViewController.swift */,
+				85BECFC6279083C700E4A6D8 /* StarsViewController.swift */,
+			);
+			path = GameViews;
 			sourceTree = "<group>";
 		};
 		8583D78F2747EF6C000607CC /* Views */ = {
@@ -132,7 +176,10 @@
 		8583D7962747F37F000607CC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				85BECFB92790810000E4A6D8 /* SwiftConfettiView.swift */,
 				8583D7942747F375000607CC /* StoryboardInitializable.swift */,
+				85CEFEAF275B931A00A02800 /* Extensions.swift */,
+				855F71C2276A3F3C00DBC230 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -140,10 +187,11 @@
 		85919B32274E3CD900192D8F /* ClientViews */ = {
 			isa = PBXGroup;
 			children = (
+				855F71BD276A2A0A00DBC230 /* GameViews */,
 				8583D7922747EFB9000607CC /* ClientViewController.swift */,
-				85919B33274E3CEF00192D8F /* GameViewController.swift */,
 				85AB3C90274E9D890020357D /* ARViewController.swift */,
 				8523B09E274FBABC00971719 /* AvatarViewController.swift */,
+				8506022F275183550094E520 /* ARRealityKitViewController.swift */,
 			);
 			path = ClientViews;
 			sourceTree = "<group>";
@@ -164,6 +212,9 @@
 			dependencies = (
 			);
 			name = MakeMuseumsGreatAgain;
+			packageProductDependencies = (
+				85CEFEAD275B90EE00A02800 /* ProgressWebViewController */,
+			);
 			productName = MakeMuseumsGreatAgain;
 			productReference = 85027B002747E33C00E0D438 /* MakeMuseumsGreatAgain.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +243,9 @@
 				Base,
 			);
 			mainGroup = 85027AF72747E33C00E0D438;
+			packageReferences = (
+				85CEFEAC275B90EE00A02800 /* XCRemoteSwiftPackageReference "ProgressWebViewController" */,
+			);
 			productRefGroup = 85027B012747E33C00E0D438 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -219,19 +273,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85060234275184A50094E520 /* Engine.rcproject in Sources */,
 				8583D7912747EF90000607CC /* HostViewController.swift in Sources */,
 				85027B1C2747E37000E0D438 /* ConnectionManager.swift in Sources */,
 				85027B082747E33C00E0D438 /* MainViewController.swift in Sources */,
+				85BECFC02790810000E4A6D8 /* SwiftConfettiView.swift in Sources */,
 				85027B042747E33C00E0D438 /* AppDelegate.swift in Sources */,
+				85BECFB6278F168300E4A6D8 /* Labels.rcproject in Sources */,
 				85919B34274E3CEF00192D8F /* GameViewController.swift in Sources */,
+				85BECFC7279083C700E4A6D8 /* StarsViewController.swift in Sources */,
 				85027B0E2747E33C00E0D438 /* MakeMuseumsGreatAgain.xcdatamodeld in Sources */,
 				8583D7932747EFB9000607CC /* ClientViewController.swift in Sources */,
 				8583D7952747F375000607CC /* StoryboardInitializable.swift in Sources */,
 				85027B1F2747E44100E0D438 /* EventModel.swift in Sources */,
+				85CEFEB0275B931A00A02800 /* Extensions.swift in Sources */,
+				855F71C3276A3F3C00DBC230 /* Constants.swift in Sources */,
 				85AB3C91274E9D890020357D /* ARViewController.swift in Sources */,
+				855F71BF276A2A2200DBC230 /* QuestionGameViewController.swift in Sources */,
+				855F71BC276A277200DBC230 /* GameCoordinator.swift in Sources */,
 				85027B062747E33C00E0D438 /* SceneDelegate.swift in Sources */,
 				8523B09F274FBABC00971719 /* AvatarViewController.swift in Sources */,
 				8547CA2B274D6CF0006BC0C0 /* ClientCoordinator.swift in Sources */,
+				85060230275183550094E520 /* ARRealityKitViewController.swift in Sources */,
+				855F71C1276A2E9C00DBC230 /* GameEvent.swift in Sources */,
 				8583D78E2747EE2E000607CC /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -364,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -381,24 +445,25 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6SPS5NV7JZ;
+				DEVELOPMENT_TEAM = YP55X74PC3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MakeMuseumsGreatAgain/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Ich brauche Zugriff!";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Ich brauche Zugriff!";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Ich brauche Zugriff!";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Ich brauche Zufgriff!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.danialeshete.MakeMuseumsGreatAgain;
+				PRODUCT_BUNDLE_IDENTIFIER = de.niklasschildhauer.MakeMuseumsGreatAgain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -413,24 +478,25 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6SPS5NV7JZ;
+				DEVELOPMENT_TEAM = YP55X74PC3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MakeMuseumsGreatAgain/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Ich brauche Zugriff!";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Ich brauche Zugriff!";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Ich brauche Zugriff!";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Ich brauche Zufgriff!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.danialeshete.MakeMuseumsGreatAgain;
+				PRODUCT_BUNDLE_IDENTIFIER = de.niklasschildhauer.MakeMuseumsGreatAgain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -460,6 +526,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85CEFEAC275B90EE00A02800 /* XCRemoteSwiftPackageReference "ProgressWebViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kf99916/ProgressWebViewController.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85CEFEAD275B90EE00A02800 /* ProgressWebViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85CEFEAC275B90EE00A02800 /* XCRemoteSwiftPackageReference "ProgressWebViewController" */;
+			productName = ProgressWebViewController;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		85027B0C2747E33C00E0D438 /* MakeMuseumsGreatAgain.xcdatamodeld */ = {

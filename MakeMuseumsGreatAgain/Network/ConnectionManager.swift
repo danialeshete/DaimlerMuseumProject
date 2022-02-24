@@ -12,6 +12,7 @@ protocol ConnectionManagerDelegate {
     func didJoinSession(in: ConnectionManager)
     func didHostSession(in: ConnectionManager)
     func didRecieveClient(event: Event, in: ConnectionManager)
+    func clientsHaveChanged(clients: [MCPeerID])
 }
 
 class ConnectionManager: NSObject {
@@ -89,6 +90,7 @@ extension ConnectionManager: MCSessionDelegate {
             if !peers.contains(peerID) {
                 DispatchQueue.main.async {
                     self.peers.insert(peerID, at: 0)
+                    self.delegate?.clientsHaveChanged(clients: self.peers)
                 }
             }
         case .notConnected:
@@ -100,6 +102,7 @@ extension ConnectionManager: MCSessionDelegate {
                 if self.peers.isEmpty && !self.isHosting {
                     self.connected = false
                 }
+                self.delegate?.clientsHaveChanged(clients: self.peers)
             }
         case .connecting:
             print("Connecting to: \(peerID.displayName)")

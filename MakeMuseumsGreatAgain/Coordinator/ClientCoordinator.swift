@@ -21,71 +21,105 @@ protocol ClientCoordinatorProtocol {
 class ClientCoordinator: Coordinator {
     var rootViewController: UIViewController {
         get {
-            navigationController
+            clientView
         }
     }
     
-    private var navigationController = UINavigationController()
+    private var clientView: ClientViewController
+    private var gameCoordinator: GameCoordinator = GameCoordinator()
+    private var stars: Int = 0 {
+        didSet {
+            clientView.display(points: stars)
+        }
+    }
+    private var blocked = false
     
     var delegate: ClientCoordinatorDelegate?
     
     init() {
-        let clientView = createClientViewController()
-        navigationController.setViewControllers([clientView], animated: false)
-    }
-    
-    private func createClientViewController() -> UIViewController {
         let clientViewController = ClientViewController.makeFromStoryboard()
+        clientView = clientViewController
         let clientPresenter = ClientPresenter()
         
-        clientViewController.presenter = clientPresenter
-        clientPresenter.delegate = self
+        clientView.modalPresentationStyle = .overFullScreen
         
-        return clientViewController
+        clientViewController.presenter = clientPresenter
+
+        clientPresenter.delegate = self
     }
     
-    private func showGameViewController() {
-        let gameView = GameViewController.makeFromStoryboard()
+    private func showGameViewController(for gameEvent: GameEvent) {
+        self.clientView.hideViewController()
+
+        let gameView = self.gameCoordinator.rootViewController
+        gameCoordinator.handle(gameEvent: gameEvent)
+        gameCoordinator.delegate = self
         
-        DispatchQueue.main.async {
-            self.navigationController.setViewControllers([gameView], animated: false)
-        }
+        self.clientView.show(viewController: gameView)
+    }
+    
+    private func showStarViewController(with stars: Int) {
+        self.clientView.hideViewController()
+
+
+        let starView = StarsViewController.makeFromStoryboard()
+        self.stars = self.stars + stars
+        starView.stars = self.stars
+        
+        starView.modalPresentationStyle = .overFullScreen
+        
+        clientView.show(viewController: starView)
     }
     
     private func showARViewController() {
-        let arView = ARViewController.makeFromStoryboard()
-        
-        DispatchQueue.main.async {
-            self.navigationController.setViewControllers([arView], animated: false)
-        }
+        self.clientView.hideViewController()
+
+        let arView = ARRealityKitViewController.makeFromStoryboard()
+        self.clientView.show(viewController: arView)
     }
     
     private func showAvatarViewController() {
-        let avatarView = AvatarViewController.makeFromStoryboard()
-        
-        DispatchQueue.main.async {
-            self.navigationController.setViewControllers([avatarView], animated: false)
-        }
+        self.clientView.hideViewController()
+    }
+    
+    private func reloadViews()  {
+        self.clientView.reload()
     }
 }
 
 extension ClientCoordinator: ClientCoordinatorProtocol {
     
     public func handle(event: Event) {
-        switch event {
-        case .showGame:
-            showGameViewController()
-        case .read(let message):
-            print("read Message \(message)")
-        case .showARCamera:
-            showARViewController()
-        case .showAvatar:
-            showAvatarViewController()
+        guard !blocked else { return }
+        blocked = true
+        DispatchQueue.main.async {
+            switch event {
+            case .showGame(let gameEvent):
+                self.showGameViewController(for: gameEvent)
+            case .read(let message):
+                print("read Message \(message)")
+            case .showARCamera:
+                self.showARViewController()
+            case .showAvatar:
+                self.showAvatarViewController()
+            case .reload:
+                self.reloadViews()
+            case .dismiss:
+                self.rootViewController.dismiss(animated: true)
+            case .scroe(stars: let stars):
+                self.showStarViewController(with: stars)
+            }
+            self.blocked = false
         }
     }
-    
 }
 
 extension ClientCoordinator: ClientPresenterDelegate {
     
+}
+
+extension ClientCoordinator: GameCoordinatorDelegate {
+    func didEarn(points: Int) {
+        self.stars = self.stars + points
+    }
 }
